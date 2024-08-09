@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;}
+main {
+    width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-between;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+    transform: translateY(20px);
+opacity: 0;
+animation: slideIn 0.6s ease-out forwards;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+body {
+    font-size: 18px;
+    font-family: Fron;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+@font-face {
+    font-family: Fron;
+    src: url(Outfit-VariableFont_wght.ttf);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+    margin-top: 20px;
+    transition: color 0.5s ease;
+
+}
+@keyframes cursor {
+     50% { border-color: transparent } 
+    }
+    @keyframes typing { from {width:0 } }
+h1:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+p#desc {
+    font-weight: 400;
+    color: hsl(213, 22%, 36%);
+    margin-top: 20px;
+    
+}
+img#nft {
+    border-radius: 20px;
+    width: 300px;
+}
+
+h3 {
+    color: hsl(178, 100%, 50%);
+    display: inline-block;
+}
+div#eth {
+    width: 120px;
+}
+h4 {
+    color: hsl(216, 19%, 39%);
+    float: right;
+}
+div#clo {
+    width: 105px;
+    float: right;
+}
+section#doisD {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+section#acodo {
+    display: flex;
+    margin-top: 20px;
+    flex-flow: row nowrap;
+    margin-bottom: 20px;
+}
+img#home {
+    width: 30px;
+    align-self: flex-start;
+}
+p#bobo {
+    color: hsl(214, 17%, 39%);
+    margin-left: 30px;
+    width: 200px; 
+    white-space: nowrap; 
+    overflow: hidden;
+    animation: typing 1s steps(17),
+     cursor .4s step-end infinite alternate;
+     border-right: 1px solid;
+}
+c {
+font-size: 18px;
+color: white
+}
+
+div#cia {
+    opacity: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 20px;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+div#cia:hover {
+    opacity: 0.7; /* Faz a div #cia aparecer ao passar o mouse */
+    cursor: pointer;
+}
+
+
+img#view {
+    position: absolute;
+    opacity: 0; /* Inicia com a imagem oculta */
+    transition: opacity 0.3s ease;
+    margin-top: 125px;
+    margin-left: 120px;
+    z-index: 2;
+    width: 60px;
+}
+img#view:hover {
+    cursor: pointer;
+}
+
